@@ -10,12 +10,12 @@ using namespace std;
 		cout << "Podaj liczbe n:  " << endl;
 		cin >> n;
 		
-		if (n>0 && n%2==0)
+		if (n > 0 && n % 2 == 0)
 		{
 		cout << "Liczba parzysta, dodatnia" << endl;
 		}
 		
-		if (n < 0 && n%2 == 0)
+		if (n < 0 && n % 2 == 0)
 		{
 		cout << "Liczba parzysta, ujemna" << endl;
 		}
@@ -25,12 +25,12 @@ using namespace std;
 		cout << "Zero" << endl;
 		}
 		
-		if (n<0 && n%2 != 0)
+		if (n<0 && n % 2 != 0)
 		{
 		cout << "Liczba nieparzysta, ujemna" << endl;
 		}
 		
-		if (n>0 && n%2 != 0)
+		if (n > 0 && n % 2 != 0)
 		{
 		cout << "Liczba nieparzysta, dodatnia" << endl;
 		}
@@ -46,7 +46,7 @@ using namespace std;
 		cout << "Podaj liczbe 3, z: " << endl;
 		cin >> z;
 		
-		if (x>y&&x>z)
+		if (x > y && x > z)
 		{
 			cout << "X=";
 			cout << x;
@@ -65,7 +65,33 @@ using namespace std;
 			cout << z;
 			cout << " jest najwieksza liczba wsrod podanych" << endl;
 		}
-		
+		else
+		{
+			cout << "Wszystkie sa takie same." << endl;
+
+		}
+
+		cout << "Podejscie nr 2: " << endl;
+
+		int temp = x;
+
+		if (temp < y)
+		{
+			temp = y;
+		}
+		if (temp < z)
+		{
+			temp = z;
+		}
+		if (temp == y && temp == z)
+		{
+			cout << "Wszystkie sa takie same." << endl;
+		}
+		else
+		{
+			cout << temp << " jest najwieksze wsrod podanych." << endl;
+		}
+
 		return 0;
 		
 };
